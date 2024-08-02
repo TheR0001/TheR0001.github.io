@@ -79,9 +79,12 @@ section {
 .feature-img {
     width: 100%;
     max-width: 200px;
-    height: auto;
+    margin: 0 auto; /* Centre le conteneur de l'image */
     aspect-ratio: 4 / 3; /* Contrôle la proportion des images */
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feature-img img {
