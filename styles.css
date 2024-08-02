@@ -74,23 +74,24 @@ section {
 #features .feature {
     margin: 2rem 0;
     animation: fadeInUp 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feature-img {
     width: 100%;
     max-width: 200px;
-    margin: 0 auto; /* Centre le conteneur de l'image */
-    aspect-ratio: 4 / 3; /* Contrôle la proportion des images */
     margin-bottom: 1rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .feature-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Adapte l'image au conteneur sans déformer les proportions */
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
