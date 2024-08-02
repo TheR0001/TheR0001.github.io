@@ -1,4 +1,3 @@
-
 /* Global Styles */
 body {
     margin: 0;
@@ -6,14 +5,18 @@ body {
     background-color: #121212;
     color: #fff;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Header */
 header {
     background: #333;
+    width: 100%;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    position: relative;
 }
 
 header nav ul {
@@ -38,41 +41,48 @@ header nav ul li a:hover {
     color: #f39c12;
 }
 
-/* Section Héroïque pour Fonctionnalités */
-#features-hero {
-    background: url('images/features-bg.jpg') no-repeat center center/cover;
+/* Section Héroïque */
+#features-hero, #participer-hero, #contact-hero {
     height: 60vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    background-size: cover;
+    background-position: center;
 }
 
-#features-hero h2 {
+#features-hero h2, #participer-hero h2, #contact-hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px #000;
 }
 
-#features-hero p {
+#features-hero p, #participer-hero p, #contact-hero p {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-#features {
+/* Section Contenu */
+#features, #participer, #contact, #intro {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #1e1e1e;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-#features .container {
+#features .container, #participer .container, #contact .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#features .feature {
+#features .feature, .participation-method {
     width: 100%;
     max-width: 300px;
     margin: 1rem;
@@ -84,7 +94,7 @@ header nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-#features .feature:hover {
+#features .feature:hover, .participation-method:hover {
     transform: translateY(-10px);
 }
 
@@ -100,68 +110,18 @@ header nav ul li a:hover {
     display: block;
 }
 
-/* Section Héroïque pour Participer */
-#participer-hero {
-    background: url('images/participer-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-#participer-hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px #000;
-}
-
-#participer-hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#participer {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #1e1e1e;
-}
-
-#participer h2 {
-    margin-bottom: 2rem;
-}
-
-#participer p {
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
-}
-
-.participation-method {
-    margin-bottom: 3rem;
-    background-color: #2c2c2c;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.participation-method:hover {
-    transform: translateY(-10px);
-}
-
-.participation-method h3 {
+.participation-method h3, #contact h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
 
-.participation-method p {
+.participation-method p, #contact-form p {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
 }
 
-.participation-method .btn {
+.participation-method .btn, .btn {
+    display: inline-block;
     background-color: #f39c12;
     color: #fff;
     padding: 0.8rem 1.5rem;
@@ -171,42 +131,11 @@ header nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.participation-method .btn:hover {
+.participation-method .btn:hover, .btn:hover {
     background-color: #e67e22;
 }
 
-/* Section Héroïque pour Contact */
-#contact-hero {
-    background: url('images/contact-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-#contact-hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px #000;
-}
-
-#contact-hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#contact {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #1e1e1e;
-}
-
-#contact h2 {
-    margin-bottom: 2rem;
-}
-
+/* Formulaire de Contact */
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -244,23 +173,10 @@ header nav ul li a:hover {
     background-color: #555;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #f39c12;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #e67e22;
-}
-
+/* Footer */
 footer {
     background-color: #333;
+    width: 100%;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
