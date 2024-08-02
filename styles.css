@@ -42,54 +42,37 @@ header nav ul li a:hover {
 }
 
 /* Section Héroïque */
-#hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 90vh; /* Augmentation de la hauteur */
+#features-hero, #participer-hero, #contact-hero {
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    background-size: cover;
+    background-position: center;
 }
 
-#hero .hero-content {
-    max-width: 800px;
-}
-
-#hero h1 {
-    font-size: 4rem; /* Augmentation de la taille de police */
+#features-hero h2, #participer-hero h2, #contact-hero h2 {
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px #000;
 }
 
-#hero p {
-    font-size: 1.8rem; /* Augmentation de la taille de police */
-    margin-bottom: 2rem;
-}
-
-#hero .btn {
-    background-color: #f39c12;
-    color: #fff;
-    padding: 1rem 2rem; /* Augmentation de la taille des boutons */
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#hero .btn:hover {
-    background-color: #e67e22;
+#features-hero p, #participer-hero p, #contact-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Section Contenu */
 #features, #participer, #contact, #intro {
-    padding: 5rem 2rem; /* Plus d'espace intérieur */
+    padding: 4rem 2rem;
     text-align: center;
     background-color: #1e1e1e;
     width: 100%;
     max-width: 1200px;
-    margin: 3rem auto; /* Plus d'espace autour */
+    margin: 0 auto;
     border-radius: 10px;
 }
 
