@@ -77,8 +77,10 @@ section {
 }
 
 #features .feature img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 150px; /* Définir une largeur maximale pour toutes les images */
+    height: auto;
+    object-fit: cover; /* Maintient le ratio d'aspect des images */
     margin-bottom: 1rem;
 }
 
