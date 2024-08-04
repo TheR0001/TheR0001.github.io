@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenMC - Accueil</title>
+    <title>Classement des Joueurs - OpenMC</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 </head>
@@ -14,17 +14,22 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="players.html">Classement des Joueurs</a></li>
                 <li><a href="factions.html">Classement des Factions</a></li>
-                <li><a href="https://github.com/Margouta/PluginOpenMC">GitHub</a></li>
-                <li><a href="https://discord.com/invite/aywen-communaute-1161296442577653802">Discord</a></li>
-                <li><a href="">LiveMap</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="discord.html">Discord</a></li>
+                <li><a href="livemap.html">LiveMap</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Bienvenue sur OpenMC</h1>
-            <p>Explorez, combattez et dominez OpenMC.</p>
+        <section class="search">
+            <input type="text" id="searchPlayer" placeholder="Rechercher un joueur...">
+        </section>
+        <section class="player-list">
+            <h2>Classement des Joueurs</h2>
+            <ul id="playerRanking">
+                <!-- Les joueurs seront insérés ici via JavaScript -->
+            </ul>
         </section>
     </main>
 
@@ -32,6 +37,7 @@
         <p>&copy; 2024 OpenMC - Tous droits réservés.</p>
     </footer>
 
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

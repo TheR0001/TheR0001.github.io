@@ -1,0 +1,12 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.player-list li, .faction-list li {
+    animation: fadeIn 0.5s ease-in-out;
+}
