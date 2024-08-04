@@ -42,13 +42,13 @@ nav ul li a:hover {
 
 .hero h1 {
     font-size: 48px;
-    color: #000000;
+    color: #2e2e2e;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
     font-size: 24px;
-    color: #000000;
+    color: #2e2e2e;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
