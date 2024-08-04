@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classement des Factions - OpenMC</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>OpenMC - Classement des Factions</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="OpenMC Logo" class="logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -16,20 +19,24 @@
                 <li><a href="factions.html">Classement des Factions</a></li>
                 <li><a href="https://github.com/Margouta/PluginOpenMC">GitHub</a></li>
                 <li><a href="https://discord.com/invite/aywen-communaute-1161296442577653802">Discord</a></li>
-                <li><a href="#">LiveMap</a></li> <!-- Lien à définir -->
+                <li><a href="">LiveMap</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="search">
-            <input type="text" id="searchFaction" placeholder="Rechercher une faction...">
-        </section>
-        <section class="faction-list">
-            <h2>Classement des Factions</h2>
-            <ul id="factionRanking">
-                <!-- Les factions seront insérées ici via JavaScript -->
-            </ul>
+        <section class="faction-section">
+            <h1>Classement des Factions</h1>
+            <div class="search-container">
+                <input type="text" id="factionSearch" placeholder="Rechercher une faction...">
+                <button onclick="searchFaction()">Rechercher</button>
+            </div>
+            <div class="faction-list">
+                <h2>Top Factions</h2>
+                <ul id="factionRanking">
+                    <!-- Les éléments de la liste seront ajoutés dynamiquement ici -->
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -37,7 +44,6 @@
         <p>&copy; 2024 OpenMC - Tous droits réservés.</p>
     </footer>
 
-    <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
