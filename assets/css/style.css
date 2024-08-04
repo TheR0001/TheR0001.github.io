@@ -77,6 +77,37 @@ nav ul li a:hover {
     color: #2e2e2e;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e5c1cd;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #d4a4b4;
+    transform: scale(1.05);
+}
+
 .player-list, .faction-list {
     padding: 20px;
     background-color: #fff;
@@ -84,7 +115,6 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    animation: fadeInUp 1s ease-in-out;
 }
 
 .player-list h2, .faction-list h2 {
