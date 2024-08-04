@@ -1,12 +1,15 @@
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-.hero {
-    animation: fadeIn 2s ease-in-out;
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.player-list li, .faction-list li {
-    animation: fadeIn 0.5s ease-in-out;
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
